@@ -5,7 +5,7 @@ import pickle
 
 st.title("Movie Recommender System")
 df = pd.read_csv('cleaned_data.csv')
-pickle.load(open('similarity.pkl', 'rb'))
+similarity=pickle.load(open('similarity.pkl', 'rb'))
 
 movies = df['title'].tolist()
 
